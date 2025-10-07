@@ -176,13 +176,12 @@ In each of the two groups, we add random transitions such that they do not repea
 If you use PD-SSM or build upon state-space modeling techniques in your research, please consider citing our work as:
 
 ```bibtex
-@misc{terzic_2025_pdssm,
-      title={Structured Sparse Transition Matrices to Enable State Tracking in State-Space Models}, 
-      author={Aleksandar Terzić and Nicolas Menet and Michael Hersche and Thomas Hofmann and Abbas Rahimi},
-      year={2025},
-      eprint={2509.22284},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2509.22284}, 
-}
+@inproceedings{terzic_2025_pdssm,
+ 	author = {Terzić, Aleksandar and Menet, Nicolas and Hersche, Michael and Hofmann, Thomas and Rahimi, Abbas},
+    note = {Aleksandar Terzić and Nicolas Menet contributed equally to this work.},
+ 	booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+ 	month = {December},
+ 	pdf = {https://arxiv.org/abs/2509.22284},
+ 	title = {Structured Sparse Transition Matrices to Enable State Tracking in State-Space Models},
+ 	year = {2025}}
 ```
