@@ -20,7 +20,7 @@ Neural Networks which utilize linear recurrences are often called **State-Space 
 With input at time $t$ being $u_t$, the state $x_t$ is recurrently evaluated as:
 
 $$
-x_t = A(u_t)x_t + Bu_t
+x_{t+1} = A(u_t)x_t + Bu_t
 $$
 
 Such linear recurrences can be evaluated using a parallel algorithm, which enables large-scale training.
@@ -123,7 +123,7 @@ On a matched hyperparameter grid, our method exhibits the second highest accurac
 
 ### Mapping an FSA to an SSM
 
-Any finite-state automaton can be emulated using the linear system $x_t = A(u_t)x_{t-1}$ with one-hot state vectors $x_t$ and column one-hot $A(u_t)$. 
+Any finite-state automaton can be emulated using the linear system $x_{t+1} = A(u_t)x_{t}$ with one-hot state vectors $x_t$ and column one-hot $A(u_t)$. 
 In general, this requires one layer, a state size of $N$, and a linear readout layer of size $N \times N$.
 An important class of automata, that of modular counters, admits a more compact representation with unit magnitude complex numbers.
 Two example FSAs and their mappings to $A(u_t)$ are shown below.
@@ -154,7 +154,7 @@ Shown below are Cayley diagrams of two different grups, $Z_2 \times Z_4$ and $D_
 
 ### Theoretical and Experimental Expressivity Limits of Structured SSMs
 
-A central property of finite-state automata which upper-bounds diagonal SSMs expressivity is solvability. 
+A central property of finite-state automata which upper bounds diagonal SSMs expressivity is solvability. 
 Under certain (practically relevant) conditions, diagonal SSMs cannot emulate automata corresponding to non-solvable groups. This is indicated by ✖️.
 
 Methods based on products of Householder matrices can in theory emulate such automata, but might require significant depth and exponentially large linear layers. This is indicated by ✔️ $^{*}$.
