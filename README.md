@@ -1,6 +1,6 @@
 # Structured Sparse Transition Matrices to Enable State Tracking in State-Space Models
 
-Paper: [https://arxiv.org/abs/2509.22284](https://openreview.net/pdf?id=RDbuSCWhad)
+Paper: https://openreview.net/pdf?id=RDbuSCWhad
 
 
 This repository contains the core implementation and experiments for our NeurIPS 2025 spotlight paper, *Structured Sparse Transition Matrices to Enable State Tracking in State-Space Models*.
